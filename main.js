@@ -7,8 +7,8 @@ console.log(document.title)
 
 console.log(document.body)
 
-// const body= document.body //variabel body adalah
-// body.append("DOM Training")
+const body= document.body //variabel body, manggil body tanpa perlu document.body
+body.append("DOM Training") //mengisikan sesuatu pada element
 
 // const h1 = document.createElement('h1') //jika hanya sampe sini dokumen kosong, seolah-olah hanya menulis <h1></h1>
 // h1.textContent = '<marquee>lagi latihan DOM</marquee>' // mengisi h1 <h1>lagi latihan DOM</h1>
