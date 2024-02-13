@@ -19,7 +19,10 @@ function gantiWarna2() {
 function ubahText () {
     console.log('ubah text nya')
     btn1.textContent = "btn1 berubah"
+}
 
+function oriText () {
+    btn1.textContent = "klik tombol ini 1"
 
 }
 //isi gantiWarna pada html merupakan function dari gantiWarna pada JS 
