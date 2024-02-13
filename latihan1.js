@@ -1,6 +1,6 @@
 document.title = 'rasyid ridho'
 const btn1 = document.getElementById('btn1')
-const btn2 = document.querySelector('btn2')
+const btn2 = document.querySelector('#btn2')
 
 console.log(btn1)
 console.log(btn2)
@@ -10,7 +10,9 @@ btn1.style.padding = '16px' //resize background button
 btn1.style.fontSize = '24px'
 btn1.style.background = 'tomato' //background color
 
-function gantiWarna() {
-    console.log("aman")
+function gantiWarna2() {
+    console.log("aman");
+    alert("aman") ;//popup aler ketika di klik
+    btn2.style.background = 'aqua';
 }
 //isi gantiWarna pada html merupakan function dari gantiWarna pada JS 
