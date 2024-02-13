@@ -15,4 +15,11 @@ function gantiWarna2() {
     alert("aman") ;//popup aler ketika di klik
     btn2.style.background = 'aqua';
 }
+
+function ubahText () {
+    console.log('ubah text nya')
+    btn1.textContent = "btn1 berubah"
+
+
+}
 //isi gantiWarna pada html merupakan function dari gantiWarna pada JS 
