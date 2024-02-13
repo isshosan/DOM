@@ -8,21 +8,33 @@ console.log(document.title)
 console.log(document.body)
 
 const body= document.body //variabel body, manggil body tanpa perlu document.body
-body.append("DOM Training") //mengisikan sesuatu pada element
+body.append("Document Object Model (DOM) Training") //mengisikan sesuatu pada element
 
-// const h1 = document.createElement('h1') //jika hanya sampe sini dokumen kosong, seolah-olah hanya menulis <h1></h1>
-// h1.textContent = '<marquee>lagi latihan DOM</marquee>' // mengisi h1 <h1>lagi latihan DOM</h1>
+const h1 = document.createElement('h1') //jika hanya sampe sini dokumen kosong, seolah-olah hanya menulis <h1></h1>
+h1.textContent = 'lagi latihan DOM' // mengisi h1 <h1>lagi latihan DOM</h1>
+body.append(h1) // perlu diappend untuk dimunculkan di body browser/html
 
-// const myname = document.createElement('p')
-// myname.innerHTML = '<marquee>ridho</marquee>' //innerHTML mirip dgn textcontent tapi berjalan di html
+const myname = document.createElement('p')
+myname.innerHTML = 'namaku ridho' //
+body.append(myname)
 
-// const username = document.createElement('b')
-// username.innerText = '<marquee>rasridho</marquee>' //innertext mirip dgn textcontent
+const username = document.createElement('b')
+username.innerText = 'username rasridho' //
+body.append(username)
 
-// body.append(h1) //h1 dimasukkan ke dalam body, append adalah menambahkan isi dari variabel
-// body.append(myname) 
-// body.append(username)
+const h2 = document.createElement('h2') 
+h2.textContent = '<marquee>lagi latihan DOM 2</marquee>'
+body.append(h2)
 
-// karna menggunakan innerHTML, 
-// <marquee> adalah element yang hanya berjalan di HTML jadi nanti dia bacanya <marquee>" Test "</marquee>, 
-// sedangkan kalau pake innerText sama textContent dia hanya akan baca itu sebagai text ( "  <marquee>" Test " </marquee> " )
+const namaku = document.createElement('p1')
+namaku.innerHTML = '<marquee>namaku rasyid ridho</marquee>' //
+body.append(namaku)
+
+const username2 = document.createElement('b2')
+username2.innerText = '<marquee>usernameku rasridho06</marquee>' //
+body.append(username2)
+
+//marquee
+// .textContent: Hanya mengambil apa yang tertulis di kertas di dalam kotak.
+// .innerHTML: Mengambil semua isi kotak, termasuk kertas, pena, dan lainnya.
+// .innerText: Mengambil apa yang tertulis di kertas di dalam kotak, dan mengubah gambar pena menjadi teks "pena".
